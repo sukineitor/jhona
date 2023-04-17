@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+.notas-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nueva-nota-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nueva-nota-form input[type="text"],
+.nueva-nota-form textarea,
+.nueva-nota-form input[type="date"],
+.nueva-nota-form input[type="time"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.nueva-nota-form button[type="submit"] {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.notas-lista {
+  list-style: none;
+  padding: 0;
+}
+
+.notas-lista li {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.notas-lista li h3 {
+  margin-top: 0;
+}
+
+.notas-lista li p {
+  margin: 10px 0 0;
+}
+
+.notas-lista li span {
+  margin-top: auto;
+  align-self: flex-end;
+}
